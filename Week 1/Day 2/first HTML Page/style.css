@@ -1,0 +1,63 @@
+.cat-senses {
+    margin-left: 70px;
+    text-align: left;
+    }
+    .center {
+     text-align: center;
+    }
+
+    .center img {
+    display: block;
+    margin: auto;
+    }
+    .cat {
+    border: 5px solid lightblue;
+    width: 450px; 
+    height: 300px;
+    display: block;
+    margin: auto;
+    }
+    .sense-list {
+        margin-left: 100px;
+        text-align: left;        
+    }
+
+    #red-table{
+        border:1px solid red;
+        border-collapse: collapse;
+        width: 100%;
+        text-align: center;
+        color: red;
+        border-color: red;
+
+        }
+
+    #black-table {
+        border:1px solid black;
+        border-collapse: collapse;
+        width: 100%;
+        text-align: center;
+        color: black; 
+        border-color: black;
+    }
+    #black-table table {
+        border: 1px solid black;
+        padding: 10px;
+    }
+    #black-table th {
+        border: 1px solid black;
+        padding: 10px;
+    }
+    #black-table td {
+        border: 1px solid black;
+        padding: 10px;
+    }
+    .lion{
+        border: 5px solid lightblue;
+        width: 450px; 
+        height: 300px;
+        display: block;
+        margin: auto;
+    }
+
+

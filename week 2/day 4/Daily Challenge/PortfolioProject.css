@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+
+
+html,h1,h2,h3,h4,h5,h6,a{
+    font-family: "Raleway";
+    color: #007bff;
+}
+
+
+header {
+    background-image: url('https://cdn.pixabay.com/photo/2015/05/26/23/52/technology-785742__480.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 75vh;
+    position: relative;
+    
+  }
+  
+  .header-content {
+    position: absolute;
+    top: 30%;
+    left: 20%;
+    text-align: left;
+  }
+
+  section {
+    padding: 45px;
+    background-color: #f8f8f8;
+    align-items: center;
+    text-align: center;
+  }
+
+  .card-img-top{
+    height: 150px;
+    object-fit: cover;
+  }
+
+  .card{
+    position: relative;
+  }
+
+  .card-img {
+    height: 300px;
+    object-fit: cover;
+  }
+
+  .overlay-title{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #007bff;
+    color: #fff;
+    padding: 5px;
+    transition: .5s ease;
+    opacity: 0;
+  }
+
+  .card:hover .overlay-title{
+    opacity: 1;
+  }
+
+ 
+  .img-fluid{
+    height: 200px;
+    width: 400px;
+    object-fit: cover;
+  }
+
+  .overlay-container{
+    position: relative;
+  }
+
+  .overlay-mytitle{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    color: #fff;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out;
+    display: flex;
+  }
+
+  .overlay-container:hover .overlay-mytitle{
+    opacity: 1;
+  }

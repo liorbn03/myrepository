@@ -1,0 +1,107 @@
+.background-img{
+    margin: 0;
+    background-image: url("https://images.pexels.com/photos/2274725/pexels-photo-2274725.jpeg?auto=compress&cs=tinysrgb&w=1600");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    height: 500px;
+}
+.content{
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;    
+}
+.email{
+    text-align: center;
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+input[type="email"] {
+    width: 400px;
+    height: 25px;
+  }
+  .signup{
+    display: inline-block;
+    margin-left: 10px;
+    text-align: center;
+    position: absolute;
+    top: 65%;
+    left: 62.5%;
+    transform: translate(-50%, -50%);
+  }
+  .signupbutton{
+    background-color: rgb(56, 201, 56);
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    height: 30px;
+    width: 80px;
+    border-radius: 9px;
+  }
+  .signupbutton:hover {
+    background-color: rgb(67, 204, 108);
+  }  
+  .signupbutton:active{
+    transform: translateY(3.5px);
+  }
+  
+nav{
+    background-color: rgba(255, 255, 255, 0.5);
+    width: 100%;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: lightgray;
+
+  }
+   li {
+    float: left;
+  }
+  li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    margin-left: 10px;
+  }
+ 
+  li a:hover:not(.active) {
+    background-color: rgb(194, 193, 193);
+  }
+  .active{
+    background-color: rgb(127, 205, 127);
+  }
+  .active:hover {
+    background-color: rgb(127, 205, 127);
+
+  }
+  .active:active{
+    transform: translateY(3px);
+  }
+
+  .icons{
+    font-size: 150px;
+    color: rgb(29, 48, 108);
+    text-align: center;
+    margin: 50px;
+  }
+
+
+
+
+
