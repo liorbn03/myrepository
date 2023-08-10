@@ -1,0 +1,108 @@
+body {
+	margin: 0;
+	padding: 0;
+	background: #1c1d22;
+	font-family: sans-serif;
+}
+
+.login-page {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+}
+
+.form {
+	position: relative;
+	z-index: 1;
+	background: #ffffff;
+	max-width: 360px;
+	margin: 0 auto 100px;
+	padding: 45px;
+	text-align: center;
+	border-radius: 5px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.form input[type="text"],
+.form input[type="password"] {
+	font-family: "Roboto", sans-serif;
+	outline: 0;
+	background: #f2f2f2;
+	width: 100%;
+	border: 0;
+	margin: 0 0 15px;
+	padding: 15px;
+	box-sizing: border-box;
+	font-size: 14px;
+}
+
+.form button {
+	font-family: "Roboto", sans-serif;
+	text-transform: uppercase;
+	outline: 0;
+	background: #4CAF50;
+	width: 100%;
+	border: 0;
+	padding: 15px;
+	color: #ffffff;
+	font-size: 14px;
+	cursor: pointer;
+	border-radius: 5px;
+	margin: 0 0 15px;
+}
+
+.form button:hover,
+.form button:active,
+.form button:focus {
+	background: #43A047;
+}
+
+.form .message {
+	margin: 15px 0 0;
+	color: #b3b3b3;
+	font-size: 12px;
+}
+
+.form .message a {
+	color: #4CAF50;
+	text-decoration: none;
+}
+
+.form .social-icons {
+	margin-top: 15px;
+}
+
+.form .social-icons a {
+	display: inline-block;
+	background-color: #fff;
+	border-radius: 50%;
+	height: 40px;
+	width: 40px;
+	margin: 0 10px;
+	text-align: center;
+	line-height: 40px;
+	color: #4CAF50;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease-in-out;
+    }
+    
+    .form .social-icons a:hover {
+    transform: scale(1.1);
+    }
+    
+    .fa {
+    font-size: 20px;
+    }
+    
+    .fa-facebook {
+    color: #3b5998;
+    }
+    
+    .fa-twitter {
+    color: #1da1f2;
+    }
+    
+    .fa-instagram {
+    color: #e4405f;
+    }
