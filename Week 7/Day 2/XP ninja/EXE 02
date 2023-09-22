@@ -1,0 +1,7 @@
+
+
+The alias command in the context of the terminal allows you to create custom shortcuts for commands.
+When you create an alias, you can use a short name to represent a longer command.
+
+for example:
+alias py=python3

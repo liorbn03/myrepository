@@ -1,0 +1,4 @@
+You can call python3 from anywhere in your terminal because the directory
+containing the python3 executable is listed in your PATH.
+This is why you don’t need to be in the executable directory to run the command.
+

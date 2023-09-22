@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+{% load static %}
+    <title>Travel Planner</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+</head>
+
+
+<body style="background-image: url('https://www.pixelstalk.net/wp-content/uploads/images6/Travel-HD-Wallpaper-Free-download.jpg'); background-size: cover;">
+
+<!-- Navigation Bar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="{% url 'homepage' %}">Travel Planner</a>
+</nav>
+
+<div class="container mt-5">
+
+
+    <!-- Create a New Trip Form -->
+    <div class="card mb-4">
+        <div class="card-body">
+            <h2>Plan Your Trip Here</h2>
+            <form method="post" action="{% url 'homepage' %}">
+                {% csrf_token %}
+                <div class="form-group">
+                    <label for="startDate">Starting Date:</label>
+                    <input type="date" class="form-control" id="startDate" name="startDate">
+                </div>
+                <div class="form-group">
+                    <label for="endDate">Ending Date:</label>
+                    <input type="date" class="form-control" id="endDate" name="endDate">
+                </div>
+                <div class="form-group">
+                    <label for="destination">Destination:</label>
+                    <input type="text" class="form-control" id="destination" name="destination">
+                </div>
+                <button type="submit" class="btn btn-primary">Plan</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- List of Created Trips -->
+    <div class="card mb-4">
+        <div class="card-body">
+            <h2>Your Listed Trips</h2>
+            <ul>
+                <!-- Loop through the trips and display them -->
+                {% for trip in trips %}
+                <li>Destination: {{ trip.destination }}. From - {{ trip.start_date|date:"F/j/Y" }} To - {{ trip.end_date|date:"F/j/Y" }}.</li>
+                {% endfor %}
+
+            </ul>
+        </div>
+    </div>
+
+    <!-- Delete an Existing Trip -->
+    <div class="card">
+        <div class="card-body">
+            <h2>Remove A Trip</h2>
+            <form method="post" action="{% url 'homepage' %}">
+                {% csrf_token %}
+                <div class="form-group">
+                    <label for="tripToDelete">Select a Trip That You Want To Remove:</label>
+                    <select class="form-control" id="tripToDelete" name="tripToDelete">
+                        <!-- Loop through the trips and display them as options -->
+                        {% for trip in trips %}
+                        <option value="{{ trip.id }}">Destination: {{ trip.destination }}. From - {{ trip.start_date|date:"F/j/Y" }} To - {{ trip.end_date|date:"F/j/Y" }}.  </option>
+                        {% endfor %}
+                    </select>
+                </div>
+                <button type="submit" class="btn btn-danger">Remove</button>
+            </form>
+        </div>
+    </div>
+
+</div>
+
+
+
+</body>
+
+</html>

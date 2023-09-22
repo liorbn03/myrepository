@@ -13,9 +13,9 @@ def player_input(player):
 
 def check_win(board, player):
     win_combinations = [
-        [0, 1, 2], [3, 4, 5], [6, 7, 8],  # Rows
-        [0, 3, 6], [1, 4, 7], [2, 5, 8],  # Columns
-        [0, 4, 8], [2, 4, 6]  # Diagonals
+        [0, 1, 2], [3, 4, 5], [6, 7, 8],
+        [0, 3, 6], [1, 4, 7], [2, 5, 8],
+        [0, 4, 8], [2, 4, 6]
     ]
     for combination in win_combinations:
         if all(board[pos] == player for pos in combination):
@@ -49,7 +49,7 @@ def play():
                 print("It's a tie!")
                 break
 
-            current_player = 1 - current_player  # Switch players for the next turn
+            current_player = 1 - current_player
         else:
             print("Position already taken. Try again.")
 
